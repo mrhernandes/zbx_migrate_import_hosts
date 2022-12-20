@@ -1,20 +1,32 @@
-[About]
+# About
 This script migrates hosts and their information to another remote zabbix.
 
-[Parameters]
+## Requirements
+<b>python3</b>
+
+<b>zabbix-api</b>
+
+https://pypi.org/project/zabbix-api/
+
+
+## Parameters
 To use this script, uncomment the following parameters:
 
-zbxsourceurl:  zabbix url source 
-zbxsourceuser: zabbix user source
-zbxsourcepass: zabbix password source
+<b>zbxsourceurl</b>:  zabbix url source
 
-zbxdesturl: zabbix url destination
-zbxdestuser: zabbix user destination
-zbxdestpass: zabbix password destination
+<b>zbxsourceuser</b>: zabbix user source
 
-zbxdestgroup: Group to Store hosts into zabbix destination
+<b>zbxsourcepass</b>: zabbix password source
 
-timeout: Maximum time and duration of the request, value in seconds
+<b>zbxdesturl</b>: zabbix url destination
 
-[Commands]
-python3 zbx_import_hosts.py
+<b>zbxdestuser</b>: zabbix user destination
+
+<b>zbxdestpass</b>: zabbix password destination
+
+<b>zbxdestgroup</b>: Group to store hosts into zabbix destination
+
+<b>timeout</b>: Maximum time and duration of the request, value in seconds
+
+## Commands
+<b>python3 zbx_import_hosts.py</b>
