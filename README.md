@@ -1,5 +1,7 @@
 # About
-This script migrates hosts and their information to another remote zabbix.
+This script migrates only hosts whithout groups and their information to another remote zabbix.
+
+The hosts properties are populated into host description(templates,groups,status)
 
 ## Requirements
 <b>python3</b>
